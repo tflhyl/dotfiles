@@ -1,0 +1,25 @@
+[credential]
+	helper = osxkeychain
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit -n 20
+	lgc = log --color --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset' --abbrev-commit -n 20
+    st = status
+    su = status -uno
+    au = add -u
+    clh = ! git rev-parse --short HEAD | tr -d '\n' | pbcopy
+    plh = rev-parse --short HEAD
+    diffc = diff --cached
+    pushf = push --force-with-lease
+[core]
+	editor = /usr/bin/vim
+[push]
+	default = simple
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+    prompt = false
+[merge "mergepbx"]
+    name = Xcode project files merger
+    driver = mergepbx %0 %A %B
+[status]
+    showUntrackedFiles = all
