@@ -28,3 +28,6 @@ vim -u ~/.vimrc +PluginInstall +qall
 # iTerm
 open nakafurano.itermcolors
 
+# Xcode pref
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+
