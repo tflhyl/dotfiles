@@ -24,6 +24,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp .vimrc ~/.
 mkdir -p ~/.vim/colors && cp flattown.vim ~/.vim/colors/
 vim -u ~/.vimrc +PluginInstall +qall
+npm -g install instant-markdown-d
 
 # iTerm
 open nakafurano.itermcolors
