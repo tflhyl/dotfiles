@@ -90,6 +90,7 @@ let g:vim_markdown_folding_disabled = 1
 " Command
 command! JSONFormat %!python -m json.tool
 command! -nargs=1 Vg vimgrep /<args>/gj **/* | cw
+command! Here cd %:p:h
 
 " unaudited
 
